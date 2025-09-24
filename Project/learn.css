@@ -1,0 +1,175 @@
+/* Reset and fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Georgia', serif;
+  color: white;
+}
+
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+nav ul li a.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: white;
+  bottom: -5px;
+  left: 0;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/poveda6u7yb/visit_bali-Yanj40lRj1HZe6VG.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-text h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 100px;
+  font-weight: bold;
+}
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  position: absolute;
+  top: 100%; /* Appears below the dropdown trigger */
+  left: 0;
+  background-color: #374333;
+  min-width: 160px;
+  z-index: 999;
+  border-radius: 6px;
+  display: none;
+  flex-direction: column;
+  padding: 15px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #414c3d; dark green
+  padding: 20px 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  font-weight: bold;
+}
+
+.nav-links a.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.organize-trip {
+  background-color: #c6cec8; /* soft grey-green background */
+  text-align: center;
+  padding: 80px 20px;
+  color: #2e3b2f; /* deep green text */
+}
+
+.organize-trip h2 {
+  font-size: 48px;
+  font-family: 'Georgia', serif;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.organize-trip p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #3b4b3b;
+}
+
+

@@ -1,0 +1,99 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Georgia', serif;
+}
+
+/* Header styles */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 3px;
+}
+
+/* Hero section */
+.hero {
+  background-image: url('your-background-image.jpg'); /* Replace with actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: white;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.overlay h2 {
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.overlay h1 {
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .overlay h2 {
+    font-size: 28px;
+  }
+  .overlay h1 {
+    font-size: 60px;
+  }
+
+  header {
+    padding: 15px 30px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+}
